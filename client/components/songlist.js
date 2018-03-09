@@ -13,6 +13,7 @@ class SongList extends Component {
   }
 
   render() {
+    console.log(window.location.hash)
     if (this.props.data.loading) return <div>Loading</div> 
     return(
       <div className="collection">
