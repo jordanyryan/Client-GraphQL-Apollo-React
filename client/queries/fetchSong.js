@@ -5,5 +5,10 @@ query FetchSong($id: ID!) {
   song(id: $id) {
     title
     id
+    lyrics {
+      likes
+      content
+      id
+    }
   }
 }`;
