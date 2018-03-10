@@ -10,7 +10,9 @@ import SongDetail from './components/songdetail';
 
 
 
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id
+});
 
 ReactDOM.render(
   <ApolloProvider client={client}>
